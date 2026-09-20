@@ -1,0 +1,172 @@
+.landingPageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 152, 57, 0.15), transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(108, 92, 231, 0.15), transparent 40%),
+              #0f0f1a;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff9839;
+}
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navlist p {
+  margin: 0;
+  padding: 10px 16px;
+
+  color: #b8bac3;
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Join as Guest + Register */
+.navlist > p:hover {
+  color: #ffffff;
+  background: rgba(255, 152, 57, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Login */
+.navlist > div {
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #ff9839;
+  box-shadow: 0 6px 16px rgba(255, 152, 57, 0.3);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.navlist > div p {
+  color: #111111;
+  font-weight: 600;
+}
+
+/* Login hover */
+.navlist > div:hover {
+  background: #ffad5c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(255, 152, 57, 0.4);
+}
+
+/* Click effect */
+.navlist p:active,
+.navlist > div:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   MAIN HERO SECTION
+========================= */
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  min-height: 80vh;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 2.2rem;
+  max-width: 560px;
+  line-height: 1.3;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] {
+  background: #ff9839;
+  width: fit-content;
+  padding: 1rem 1.6rem;
+  border-radius: 14px;
+  margin-top: 1.9rem;
+  box-shadow: 0 8px 22px rgba(255, 152, 57, 0.35);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"]:hover {
+  background: #ffad5c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 152, 57, 0.45);
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.5));
+}
+
+/* =========================
+   MEET / VIDEO SECTION
+========================= */
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  min-height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  min-width: 260px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
