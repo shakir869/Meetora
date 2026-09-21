@@ -77,39 +77,57 @@ Example:
 ```text
 https://your-domain.com/meeting-code
 
+| Technology   | Purpose                       |
+| ------------ | ----------------------------- |
+| React.js     | Building the user interface   |
+| JavaScript   | Application logic             |
+| React Router | Client-side routing           |
+| Material UI  | UI components                 |
+| CSS          | Styling and responsive design |
+| Context API  | Global authentication state   |
 
-📱 Responsive User Interface
 
-The frontend is designed to work across different screen sizes.
+| Technology | Purpose                 |
+| ---------- | ----------------------- |
+| Node.js    | JavaScript runtime      |
+| Express.js | Backend framework       |
+| Socket.IO  | Real-time communication |
+| Mongoose   | MongoDB object modeling |
+| MongoDB    | Database                |
 
-The application supports:
 
-Desktop
-Laptop
-Tablet
-Mobile devices
+| Service       | Purpose                |
+| ------------- | ---------------------- |
+| GitHub        | Source code management |
+| Render        | Backend deployment     |
+| MongoDB Atlas | Cloud database         |
+| Vercel        | Frontend deployment    |
 
-The UI is built using React and Material UI along with custom CSS styling.
 
-🛠️ Technologies Used
-Frontend
-Technology	Purpose
-React.js	Building the user interface
-JavaScript	Application logic
-React Router	Client-side routing
-Material UI	UI components
-CSS	Styling and responsive design
-Context API	Global authentication state
-Backend
-Technology	Purpose
-Node.js	JavaScript runtime
-Express.js	Backend framework
-Socket.IO	Real-time communication
-Mongoose	MongoDB object modeling
-MongoDB	Database
-Deployment
-Service	Purpose
-GitHub	Source code management
-Render	Backend deployment
-MongoDB Atlas	Cloud database
-Vercel	Frontend deployment
+
+                    Start
+                      │
+                      ▼
+               Landing Page
+                      │
+             ┌────────┴────────┐
+             │                 │
+             ▼                 ▼
+           Login             Register
+             │                 │
+             └────────┬────────┘
+                      │
+                      ▼
+                 Home Page
+                      │
+                      ▼
+              Create / Join Meeting
+                      │
+                      ▼
+               Video Meeting
+                      │
+                      ▼
+              Meeting Completed
+                      │
+                      ▼
+              Meeting History
